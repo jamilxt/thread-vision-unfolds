@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { cn } from '@/lib/utils';
 
@@ -17,7 +16,12 @@ const chapters = [
   { id: 7, title: "Thread Pools", subtitle: "ExecutorService" },
   { id: 8, title: "Concurrent Collections", subtitle: "Thread-Safe Data Structures" },
   { id: 9, title: "Atomic Operations", subtitle: "Lock-Free Programming" },
-  { id: 10, title: "Memory Model", subtitle: "Visibility & Volatile" }
+  { id: 10, title: "Memory Model", subtitle: "Visibility & Volatile" },
+  { id: 11, title: "Futures & Completions", subtitle: "Asynchronous Programming" },
+  { id: 12, title: "Fork/Join Framework", subtitle: "Parallel Decomposition" },
+  { id: 13, title: "Reactive Streams", subtitle: "Backpressure & Flow Control" },
+  { id: 14, title: "Virtual Threads", subtitle: "Project Loom" },
+  { id: 15, title: "Performance & Profiling", subtitle: "Optimization Techniques" }
 ];
 
 export const ChapterNavigation = ({ currentChapter, onChapterChange }: ChapterNavigationProps) => {
