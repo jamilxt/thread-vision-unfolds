@@ -300,7 +300,7 @@ export const MemoryModel = () => {
             <li>• Cache coherence problems</li>
             <li>• Infinite loops</li>
           </ul>
-        </div>
+        </Card>
       </div>
     </div>
   );
