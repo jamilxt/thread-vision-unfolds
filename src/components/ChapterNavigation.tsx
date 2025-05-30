@@ -15,7 +15,9 @@ const chapters = [
   { id: 5, title: "Producer-Consumer", subtitle: "Classic Pattern" },
   { id: 6, title: "Deadlock", subtitle: "Detection & Prevention" },
   { id: 7, title: "Thread Pools", subtitle: "ExecutorService" },
-  { id: 8, title: "Concurrent Collections", subtitle: "Thread-Safe Data Structures" }
+  { id: 8, title: "Concurrent Collections", subtitle: "Thread-Safe Data Structures" },
+  { id: 9, title: "Atomic Operations", subtitle: "Lock-Free Programming" },
+  { id: 10, title: "Memory Model", subtitle: "Visibility & Volatile" }
 ];
 
 export const ChapterNavigation = ({ currentChapter, onChapterChange }: ChapterNavigationProps) => {

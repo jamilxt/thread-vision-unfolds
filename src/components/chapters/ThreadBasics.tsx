@@ -3,9 +3,11 @@ import React, { useState, useEffect } from 'react';
 import { Play, Pause, RotateCcw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+import { useAnimation } from '@/contexts/AnimationContext';
 
 export const ThreadBasics = () => {
   const [isRunning, setIsRunning] = useState(false);
+  const { getInterval } = useAnimation();
   const [threads, setThreads] = useState([
     { id: 'main', name: 'Main Thread', progress: 0, color: 'bg-blue-500' },
     { id: 'worker1', name: 'Worker Thread 1', progress: 0, color: 'bg-green-500' },
@@ -20,10 +22,10 @@ export const ThreadBasics = () => {
           ...thread,
           progress: Math.min(thread.progress + Math.random() * 10, 100)
         })));
-      }, 200);
+      }, getInterval(200));
     }
     return () => clearInterval(interval);
-  }, [isRunning]);
+  }, [isRunning, getInterval]);
 
   const reset = () => {
     setIsRunning(false);

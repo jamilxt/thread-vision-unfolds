@@ -8,6 +8,8 @@ import { ProducerConsumer } from './chapters/ProducerConsumer';
 import { Deadlock } from './chapters/Deadlock';
 import { ThreadPools } from './chapters/ThreadPools';
 import { ConcurrentCollections } from './chapters/ConcurrentCollections';
+import { AtomicOperations } from './chapters/AtomicOperations';
+import { MemoryModel } from './chapters/MemoryModel';
 
 interface ChapterContentProps {
   chapter: number;
@@ -32,6 +34,10 @@ export const ChapterContent = ({ chapter }: ChapterContentProps) => {
         return <ThreadPools />;
       case 8:
         return <ConcurrentCollections />;
+      case 9:
+        return <AtomicOperations />;
+      case 10:
+        return <MemoryModel />;
       default:
         return <ThreadBasics />;
     }
