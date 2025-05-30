@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { cn } from '@/lib/utils';
 
@@ -27,7 +26,12 @@ const chapters = [
   { id: 17, title: "Semaphores & Barriers", subtitle: "Coordination Primitives" },
   { id: 18, title: "Phaser & Exchanger", subtitle: "Advanced Coordination" },
   { id: 19, title: "ThreadLocal Variables", subtitle: "Thread-Specific Storage" },
-  { id: 20, title: "Best Practices", subtitle: "Design Patterns & Guidelines" }
+  { id: 20, title: "Best Practices", subtitle: "Design Patterns & Guidelines" },
+  { id: 21, title: "Parallel Streams", subtitle: "Stream Processing & Collections" },
+  { id: 22, title: "Non-blocking I/O", subtitle: "NIO.2 & Async Operations" },
+  { id: 23, title: "CompletionStage", subtitle: "Advanced Reactive Programming" },
+  { id: 24, title: "Microservices Patterns", subtitle: "Distributed Concurrency" },
+  { id: 25, title: "Debug & Monitor", subtitle: "Profiling & Analysis Tools" }
 ];
 
 export const ChapterNavigation = ({ currentChapter, onChapterChange }: ChapterNavigationProps) => {

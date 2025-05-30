@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ThreadBasics } from './chapters/ThreadBasics';
 import { ThreadStates } from './chapters/ThreadStates';
@@ -19,6 +20,11 @@ import { SemaphoresBarriers } from './chapters/SemaphoresBarriers';
 import { PhaserExchanger } from './chapters/PhaserExchanger';
 import { ThreadLocalVariables } from './chapters/ThreadLocalVariables';
 import { BestPractices } from './chapters/BestPractices';
+import { ParallelStreams } from './chapters/ParallelStreams';
+import { NonBlockingIO } from './chapters/NonBlockingIO';
+import { CompletionStageAdvanced } from './chapters/CompletionStageAdvanced';
+import { MicroservicesPatterns } from './chapters/MicroservicesPatterns';
+import { DebugMonitor } from './chapters/DebugMonitor';
 
 interface ChapterContentProps {
   chapter: number;
@@ -67,6 +73,16 @@ export const ChapterContent = ({ chapter }: ChapterContentProps) => {
         return <ThreadLocalVariables />;
       case 20:
         return <BestPractices />;
+      case 21:
+        return <ParallelStreams />;
+      case 22:
+        return <NonBlockingIO />;
+      case 23:
+        return <CompletionStageAdvanced />;
+      case 24:
+        return <MicroservicesPatterns />;
+      case 25:
+        return <DebugMonitor />;
       default:
         return <ThreadBasics />;
     }
