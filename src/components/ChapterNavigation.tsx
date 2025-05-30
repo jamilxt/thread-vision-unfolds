@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { cn } from '@/lib/utils';
 
@@ -21,14 +22,19 @@ const chapters = [
   { id: 12, title: "Fork/Join Framework", subtitle: "Parallel Decomposition" },
   { id: 13, title: "Reactive Streams", subtitle: "Backpressure & Flow Control" },
   { id: 14, title: "Virtual Threads", subtitle: "Project Loom" },
-  { id: 15, title: "Performance & Profiling", subtitle: "Optimization Techniques" }
+  { id: 15, title: "Performance & Profiling", subtitle: "Optimization Techniques" },
+  { id: 16, title: "Locks & Conditions", subtitle: "Advanced Synchronization" },
+  { id: 17, title: "Semaphores & Barriers", subtitle: "Coordination Primitives" },
+  { id: 18, title: "Phaser & Exchanger", subtitle: "Advanced Coordination" },
+  { id: 19, title: "ThreadLocal Variables", subtitle: "Thread-Specific Storage" },
+  { id: 20, title: "Best Practices", subtitle: "Design Patterns & Guidelines" }
 ];
 
 export const ChapterNavigation = ({ currentChapter, onChapterChange }: ChapterNavigationProps) => {
   return (
     <div className="bg-white rounded-xl shadow-lg p-6">
       <h2 className="text-xl font-semibold mb-6 text-gray-800">Chapters</h2>
-      <div className="space-y-2">
+      <div className="space-y-2 max-h-96 overflow-y-auto">
         {chapters.map((chapter) => (
           <button
             key={chapter.id}

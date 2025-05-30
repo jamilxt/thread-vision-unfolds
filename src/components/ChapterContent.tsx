@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ThreadBasics } from './chapters/ThreadBasics';
 import { ThreadStates } from './chapters/ThreadStates';
@@ -15,6 +14,11 @@ import { ForkJoinFramework } from './chapters/ForkJoinFramework';
 import { ReactiveStreams } from './chapters/ReactiveStreams';
 import { VirtualThreads } from './chapters/VirtualThreads';
 import { PerformanceProfiling } from './chapters/PerformanceProfiling';
+import { LocksConditions } from './chapters/LocksConditions';
+import { SemaphoresBarriers } from './chapters/SemaphoresBarriers';
+import { PhaserExchanger } from './chapters/PhaserExchanger';
+import { ThreadLocalVariables } from './chapters/ThreadLocalVariables';
+import { BestPractices } from './chapters/BestPractices';
 
 interface ChapterContentProps {
   chapter: number;
@@ -53,6 +57,16 @@ export const ChapterContent = ({ chapter }: ChapterContentProps) => {
         return <VirtualThreads />;
       case 15:
         return <PerformanceProfiling />;
+      case 16:
+        return <LocksConditions />;
+      case 17:
+        return <SemaphoresBarriers />;
+      case 18:
+        return <PhaserExchanger />;
+      case 19:
+        return <ThreadLocalVariables />;
+      case 20:
+        return <BestPractices />;
       default:
         return <ThreadBasics />;
     }
